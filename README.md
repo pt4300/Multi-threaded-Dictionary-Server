@@ -125,7 +125,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 3. Sever has the ability to check current operating port number and incoming client request
 
-<img src="images\server" alt="Server GUI">
+<img src="images\server.png" alt="Server GUI">
  <figcaption>Server Interface</figcaption>
 </figure>
 
