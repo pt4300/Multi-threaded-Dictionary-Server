@@ -109,8 +109,11 @@ _Below is an example of how you can instruct your audience on installing and set
 ## Usage
 
 1. After both server and client is online,  client can start query the server with 4 actions, search, add, delete and update.
+2. <figure>
+<img src="images\client.png" alt="Client GUI">
+ <figcaption>Client Interface</figcaption>
+</figure>
 
-   ![image-20230705181715735](images\client.png)
 
    Search - look up word definition from existing server dictionary file
 
@@ -120,11 +123,13 @@ _Below is an example of how you can instruct your audience on installing and set
 
    Update - Update word definition to existing server dictionary file
 
-2. Sever has the ability to check current operating port number and incoming client request
+3. Sever has the ability to check current operating port number and incoming client request
 
-   ![image-20230705181954759](images\server.png)
+<img src="images\server" alt="Server GUI">
+ <figcaption>Server Interface</figcaption>
+</figure>
 
-3. The server is able to concurrently handle multiple clients at once without any issues. The detail implementation design is discussed in docuement.pdf.
+4. The server is able to concurrently handle multiple clients at once without any issues. The detail implementation design is discussed in docuement.pdf.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
