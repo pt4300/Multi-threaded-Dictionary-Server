@@ -1,0 +1,87 @@
+JFDML JFormDesigner: "8.0.3.0.246" Java: "17.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq l {space :::p, comp label1::::876:x}, seq l {par t {seq {space :0:0:x, comp searchRadioButton:::p::p, space s:::p, comp addRadioButton:::p::p, space s:::p, comp deleteRadioButton:::p::p, space s:::p, comp updateRadioButton:::p::p, space :p:415:p}, seq t {space :35:35:p, par l {comp label4:::p::p, comp scrollPane2:::p:818:p}}}, space :0:29:x}}, space :::p}, seq t {space :p:35:p, par l {seq l {par t {comp scrollPane3:::p:818:p, comp sendButton:::p:353:p}, space ::35:x}, seq t {space :0:261:x, comp word:::p:300:p, space :p:292:p}}}, seq t {space :0:423:x, par l {seq t {comp label2:::p:60:p, space :p:405:p}, seq t {comp label3:::p::p, space :p:407:p}}}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label1:::p:30:p, space :::p, comp label2:::p::p, space :::p, comp word:::p::p, space :p:5:p, comp label3:::p::p, space :::p, comp scrollPane3:::p:71:p, space :::p, par l {seq {par b {comp searchRadioButton::b:p::p, comp addRadioButton::b:p::p, comp deleteRadioButton::b:p::p, comp updateRadioButton::b:p::p, comp sendButton::b:p::p}, space s:::p}, seq t {comp label4:::p::p, space :p:2:p}}, comp scrollPane2:::p:150:p, space ::11:x}}"
+		} ) {
+			name: "this"
+			"resizable": false
+			"title": "DictionaryClient"
+			"defaultCloseOperation": 3
+			"visible": true
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "searchRadioButton"
+				"text": "search"
+				"$buttonGroup": new FormReference( "actionSelect" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "search", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "addRadioButton"
+				"text": "add"
+				"$buttonGroup": new FormReference( "actionSelect" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "add", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "deleteRadioButton"
+				"text": "delete"
+				"$buttonGroup": new FormReference( "actionSelect" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "delete", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "updateRadioButton"
+				"text": "update"
+				"$buttonGroup": new FormReference( "actionSelect" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "update", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "word"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "responseField"
+					"editable": false
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "sendButton"
+				"text": "send"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "send", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Welcome User, Please input word and definition"
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Word"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Definition"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane3"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "definition"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Response"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 0 )
+			"size": new java.awt.Dimension( 890, 440 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "actionSelect"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 456 )
+		} )
+	}
+}

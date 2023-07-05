@@ -1,0 +1,39 @@
+JFDML JFormDesigner: "8.0.3.0.246" Java: "17.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :34:34:p, par l {comp label3:::p:165:p, comp scrollPane1:::p:560:p, seq {comp label2:::p:74:p, space :p:105:p, comp portText:::p:199:p}}, space ::19:x}}"
+			"$verticalGroup": "par l {seq l {space :p:48:p, par b {comp label2::b:p::p, comp portText::b:p::p}, space :p:30:p, comp label3:::p::p, space s:::p, comp scrollPane1:::p:179:p, space ::42:x}}"
+		} ) {
+			name: "this"
+			"title": "DictionaryServer"
+			"resizable": false
+			"visible": true
+			"defaultCloseOperation": 3
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Port"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Console Log:"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "portText"
+				"editable": false
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "consoleTextArea"
+					"editable": false
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 615, 395 )
+		} )
+	}
+}
