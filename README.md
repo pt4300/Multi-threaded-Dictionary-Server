@@ -110,7 +110,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 1. After both server and client is online,  client can start query the server with 4 actions, search, add, delete and update.
 
-   ![image-20230705181715735](C:\Users\Eolith\AppData\Roaming\Typora\typora-user-images\image-20230705181715735.png)
+   ![image-20230705181715735](images\client.png)
 
    Search - look up word definition from existing server dictionary file
 
@@ -122,7 +122,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 2. Sever has the ability to check current operating port number and incoming client request
 
-   ![image-20230705181954759](C:\Users\Eolith\AppData\Roaming\Typora\typora-user-images\image-20230705181954759.png)
+   ![image-20230705181954759](images\server.png)
 
 3. The server is able to concurrently handle multiple clients at once without any issues. The detail implementation design is discussed in docuement.pdf.
 
