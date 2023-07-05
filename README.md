@@ -35,7 +35,7 @@
     <br />
     <a href="https://github.com/pt4300/Multi-threaded-Dictionary-Server.git"><strong>Explore the docs »</strong></a>
     <br />
-    
+
   </p>
 
 </div>
@@ -87,17 +87,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 3. For running jar file, please extract the client.jar and server.jar and cd to the extracted folder
 
-4. Running the following command to initiate the server first 
-   ```sh
-   java -jar DictionaryServer.jar <port> <dictionary-file>
-   ```
-5. After server initiated, start client
-   ```sh
-   java –jar DictionaryClient.jar <server-address> <server-port>
-   ```
-6. If both server and client is running on one local machine, the server address should localhost as default. 
 
-7. To run the source code on any IDE, similar setup for the project configuration should be followed. The required gson library is also require to be attached on the project structure.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,11 +95,22 @@ _Below is an example of how you can instruct your audience on installing and set
 
 ## Usage
 
-1. After both server and client is online,  client can start query the server with 4 actions, search, add, delete and update.
-2. <figure>
-<img src="images\client.png" alt="Client GUI">
- <figcaption>Client Interface</figcaption>
-</figure>
+1. Running the following command to initiate the server first 
+   ```sh
+   java -jar DictionaryServer.jar <port> <dictionary-file>
+   ```
+
+2. After server initiated, start client
+   ```sh
+   java –jar DictionaryClient.jar <server-address> <server-port>
+   ```
+
+3. If both server and client is running on one local machine, the server address should be**localhost** as default. 
+4. After both server and client is online,  client can start query the server with 4 actions, search, add, delete and update.
+5. <figure>
+   <img src="images\client.png" alt="Client GUI">
+   <figcaption>Client Interface</figcaption>
+     </figure>
 
 
    Search - look up word definition from existing server dictionary file
@@ -120,13 +121,14 @@ _Below is an example of how you can instruct your audience on installing and set
 
    Update - Update word definition to existing server dictionary file
 
-3. Sever has the ability to check current operating port number and incoming client request
+6. Sever has the ability to check current operating port number and incoming client request
 
 <img src="images\server.png" alt="Server GUI">
  <figcaption>Server Interface</figcaption>
 </figure>
 
-4. The server is able to concurrently handle multiple clients at once without any issues. The detail implementation design is discussed in docuement.pdf.
+7. The server is able to concurrently handle multiple clients at once without any issues. The detail implementation design is discussed in documentation.pdf.
+8. To run the source code on any IDE, similar setup for the project configuration should be followed. The required gson library is also require to be attached on the project structure.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -173,5 +175,4 @@ Your Name - pt4300@hotmail.com
 Project Link: [https://github.com/pt4300/Multi-threaded-Dictionary-Server](https://github.com/pt4300/Multi-threaded-Dictionary-Server)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
